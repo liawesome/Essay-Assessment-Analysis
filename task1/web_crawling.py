@@ -3,6 +3,7 @@
 import re
 from bs4 import BeautifulSoup
 import os
+import pandas as pd
 
 headers = {
     'user-agent': 'Mozilla/5.0'
@@ -99,6 +100,11 @@ def crawl_xdf(url):
         file.close()
     except:
         print("error occurs in saving file:", title, url)
+
+    # generate dataset
+    data = pd.DataFrame(eng_writing, columns=['title', 'content'])
+    data.to_csv('content.csv')
+
 
 
 if __name__ == "__main__":
