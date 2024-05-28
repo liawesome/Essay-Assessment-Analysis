@@ -1,0 +1,1 @@
+["pres", "sim_past", "other", "cond", "infinitif", "fut_perf", "pres_perf", "fut", "past_perf", "pres_cont", "cond_perf", "cond_cont", "fut_cont", "past_cont", "pres_perf_cont", "past_perf_cont", "cond_perf_cont", "sim_past other", "fut_perf_cont"]
